@@ -1,0 +1,11 @@
+# Function to check if a number is a palindrome
+def is_palindrome(n):
+    str_n = str(n)
+    return str_n == str_n[::-1]
+
+# Take input from user
+num = int(input("Enter a number: "))
+if is_palindrome(num):
+    print(f"{num} is a palindrome.")
+else:
+    print(f"{num} is not a palindrome.")
